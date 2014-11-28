@@ -29,12 +29,7 @@ for( $i = 0; $i < $strlen; $i++ ) {
 	   array_push($pozsugl, $i);
 	}
 }
-    echo "\n"."sugl ".printing($sugl)."\n" ;
-    echo "\n"."pozsugl ".printing($pozsugl)."\n";
-    $sugl = shifty($sugl);
-    echo "\n"."sugl poslije shifty ".printing($sugl)."\n";
-	echo "\n"."\n"."Rezultat prije ". $res ."\n";
-	echo "\n"."Rezultat nakon svega:" . changeChar($res,$pozsugl, $sugl);
+	return changeChar($res,$pozsugl, $sugl);
 	}
 	//Sortiranje 
 	function shifty($c) {
