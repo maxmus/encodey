@@ -31,7 +31,8 @@ for( $i = 0; $i < $strlen; $i++ ) {
 }
 	return changeChar($res,$pozsugl, $sugl);
 	}
-	//Sortiranje 
+	
+	
 	function shifty($c) {
 	  $siz = sizeof($c);
       $tmp = $c[0];
@@ -40,7 +41,7 @@ for( $i = 0; $i < $strlen; $i++ ) {
       $c[$siz - 1] = $tmp;
       return $c;
 	}
-	//Spajanje samoglasnika sa krajnjom recenicom
+	
 	function changeChar($str, $pozsugl, $sugl) {
 	    $strlen = strlen( $str );
 	    $siz= sizeof($pozsugl);
@@ -58,7 +59,7 @@ for( $i = 0; $i < $strlen; $i++ ) {
 	    return $rez;
 	}
 	
-	//Funkcija za printanje
+	
 	function printing($f) {
 	     $siz= sizeof($f);
 	     $t="";
