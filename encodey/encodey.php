@@ -1,4 +1,5 @@
 <?php
+echo encodey("testna", array('a','e','i','o', 'u'));
 function encodey($str,$a ) {
 $strlen = strlen( $str );
 $siz = sizeof($a);
@@ -29,10 +30,10 @@ for( $i = 0; $i < $strlen; $i++ ) {
 	   array_push($pozsugl, $i);
 	}
 }
+    $sugl = shifty($sugl);
 	return changeChar($res,$pozsugl, $sugl);
 	}
-	
-	
+
 	function shifty($c) {
 	  $siz = sizeof($c);
       $tmp = $c[0];
@@ -41,7 +42,7 @@ for( $i = 0; $i < $strlen; $i++ ) {
       $c[$siz - 1] = $tmp;
       return $c;
 	}
-	
+
 	function changeChar($str, $pozsugl, $sugl) {
 	    $strlen = strlen( $str );
 	    $siz= sizeof($pozsugl);
@@ -58,7 +59,6 @@ for( $i = 0; $i < $strlen; $i++ ) {
 	    }
 	    return $rez;
 	}
-	
 	
 	function printing($f) {
 	     $siz= sizeof($f);
