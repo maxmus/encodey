@@ -1,5 +1,4 @@
 <?php
-echo encodey("testna", array('a','e','i','o', 'u'));
 function encodey($str,$a ) {
 $strlen = strlen( $str );
 $siz = sizeof($a);
